@@ -39,7 +39,7 @@ operation:
 
 ### What Modalka is not
 
-* Modalka does not introduce a new keyboard layout for the normal mode, you
+* Modalka does not introduce a new keyboard layout for the normal mode; you
   set it up yourself.
 
 * Modalka does not provide new commands for editing.
@@ -116,7 +116,7 @@ Here are the versions that wrap their arguments with `kbd`:
 * `modalka-define-kbd`
 * `modalka-remove-kbd`
 
-Using these functions it's easy to setup a translation map.
+Using these functions it's easy to set up a translation map.
 
 Note that the target key binding cannot be a prefix key:
 
@@ -240,7 +240,7 @@ has the following flaws:
   generation of key bindings that `control-mode` uses fixes keybindings
   every time and thus causes all sorts of problems.
 
-* Control mode generates more key bindings than necessary replacing key
+* Control mode generates more key bindings than necessary, replacing key
   bindings that should not be used in the normal mode.
 
 ### God Mode
@@ -256,13 +256,13 @@ However, compared to Modalka, God Mode has certain downsides:
 
 * Unlike Modalka, God Mode doesn't work with input methods.
 
-* You don't need to write hooks to change the shape of cursor according to
-  current mode with Modalka, it handles this for you.
+* You don't need to write hooks to change the shape of the cursor according
+  to the current mode with Modalka; it handles this for you.
 
 ### Boon
 
 [Boon][boon] is a package for modal editing with emphasis on ergonomics.
-This package gives you complete implementation of a modal editing system
+This package gives you a complete implementation of a modal editing system
 similar to Vi. It may take some time to learn it and I'm not entirely sure
 it will make much difference. Modal editing is easier, but ergonomic layout
 in the normal mode is somewhat optional for most people. I value
@@ -280,9 +280,9 @@ fact that Fingers is optimized for the *Workman* keyboard layout.
 [Xah Fly Keys][xah-fly-keys] is a package for ergonomic modal editing
 optimized for *Dvorak*. It's rather big compared to Boon and Fingers. If you
 look at source code you'll see that it has a peculiar collection of editing
-primitives. For example one can capitalize text skipping words like “and”,
+primitives. For example one can capitalize text, skipping words like “and”,
 “to”, “or”, etc.—functionality that is rarely found in this sort of a
-package. Good dose of Unicode support is guaranteed, too.
+package. A good dose of Unicode support is guaranteed, too.
 
 ### Ergoemacs Mode
 

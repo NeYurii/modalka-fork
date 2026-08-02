@@ -44,7 +44,7 @@
 (defcustom modalka-cursor-type t
   "The cursor type to use in `modalka-mode'.
 
-See the description of `cursor-type' for mode information, this
+See the description of `cursor-type' for more information, this
 variable should follow the same conventions."
   :tag "Cursor type"
   :type '(choice
@@ -123,7 +123,7 @@ the mode if ARG is omitted or NIL, and toggle it if ARG is
 
 This minor mode sets up translation of key bindings according to
 a configuration created previously with `modalka-define-key' and
-`modalka-define-keys'."
+`modalka-define-kbd'."
   :init-value nil
   :lighter "↑"
   :keymap modalka-mode-map
@@ -135,7 +135,7 @@ a configuration created previously with `modalka-define-key' and
 (defun modalka--maybe-activate ()
   "Activate `modalka-mode' in the current buffer if it is allowed.
 
-The function does not active the mode in the minibuffer if the
+The function does not activate the mode in the minibuffer or if the
 major mode is in `modalka-excluded-modes'.
 
 This is used by `modalka-global-mode'."
